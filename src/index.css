@@ -1,0 +1,101 @@
+body {
+  background-color: #c7cacf;
+  font-family: Arial, sans-serif;
+}
+
+.app-container {
+  max-width: 620px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+header h1 {
+  text-align: center;
+}
+
+.todo-input {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.todo-input button {
+  padding: 10px 20px;
+  font-size: 16px;
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #bababa;
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.todo-item .actions button {
+  margin-left: 10px;
+}
+
+.todo-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.todo-input input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.todo-input button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 320px) {
+  .todo-input {
+    flex-direction: column;
+  }
+
+  .todo-input input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .todo-input button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .todo-input {
+    gap: 5px;
+  }
+
+  .todo-input input {
+    flex: 1;
+  }
+
+  .todo-input button {
+    flex: none;
+  }
+}
